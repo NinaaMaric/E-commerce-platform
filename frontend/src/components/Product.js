@@ -4,12 +4,12 @@ import Rating from "./Rating";
 export default function Product(props) {
   const { product } = props;
   return (
-    <div key={product._id} className="card">
+    <div key={product.id} className="card">
       <a href={`/product/${product._id}`}>
       <img className="medium" src={product.image} alt={product.name} />
       </a>
       <div className="card-body">
-        <a href={`/product/${product._id}`}>
+        <a href={`/product/${product.id}`}>
           <h1>{product.name} </h1>
         </a>
         <Rating rating={product.rating} numReview={product.numReview} />

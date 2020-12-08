@@ -1,7 +1,7 @@
 const data ={
     products: [
         {
-            _id: '1',
+            id: '1',
             name: "Nike shirt",
             category: "Shirts",
             price: 120,
@@ -13,7 +13,7 @@ const data ={
             description: "high quality product"
         },
         {
-            _id: '2',
+            id: '2',
             name: "Addidas shorts",
             category: "Shorts",
             price: 100,
@@ -25,7 +25,7 @@ const data ={
             description: "high quality product"
         },
         {
-            _id: '3',
+            id: '3',
             name: "Lacoste shirt",
             category: "Shirts",
             price: 150,
@@ -37,7 +37,7 @@ const data ={
             description: "high quality product"
         },
         {
-            _id: '4',
+            id: '4',
             name: "Puma pants",
             category: "Panst",
             price: 70,
@@ -49,7 +49,7 @@ const data ={
             description: "high quality product"
         },
         {
-            _id: '5',
+            id: '5',
             name: "Nike pants",
             category: "Pants",
             price: 120,
@@ -61,7 +61,7 @@ const data ={
             description: "high quality product"
         },
         {
-            _id: '6',
+            id: '6',
             name: "Champion shirt",
             category: "Shirts",
             price: 80,

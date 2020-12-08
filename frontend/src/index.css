@@ -1,4 +1,3 @@
-
 html {
   font-size: 62.5%; /* 16px x 62.5 = 10px = 1rem */
   box-sizing: border-box;
@@ -7,7 +6,7 @@ body {
   margin: 0;
   height: 100vh;
   font-size: 1.6rem;
-  font-family: 'Assistant', sans-serif;
+  font-family: "Assistant", sans-serif;
   font-family: Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -18,9 +17,9 @@ body {
 .grid-container {
   display: grid;
   grid-template-areas:
-    'header'
-    'main'
-    'footer';
+    "header"
+    "main"
+    "footer";
   grid-template-columns: 1fr;
   grid-template-rows: 5rem 1fr 5rem;
   height: 100%;
@@ -28,6 +27,7 @@ body {
 header {
   grid-area: header;
   background-color: #203040;
+  height: 6.5rem;
 }
 main {
   grid-area: main;
@@ -39,52 +39,52 @@ footer {
   color: #ffffff;
 }
 /* common classes */
-h1{
+h1 {
   font-size: 1.8rem;
   padding: 0.5rem 0;
 }
-h2{
+h2 {
   font-size: 1.6rem;
   padding: 0.5rem 0;
 }
-a{
+a {
   text-decoration: none;
 }
-a:hover{
+a:hover {
   color: tomato;
 }
-a.logo{
+a.logo {
   color: #fff;
   font-size: 3rem;
   font-weight: 600;
 }
-ul{
+ul {
   padding: 0;
   margin: 0;
   list-style-type: none;
 }
-li{
+li {
   margin-top: 1rem;
 }
-button{
+button {
   padding: 1rem;
   border-radius: 0.7rem;
-  border: .1rem solid #a4a4a4;
+  border: 0.1rem solid #a4a4a4;
   font-size: 1.6rem;
-  font-family: 'Assistant', sans-serif;
+  font-family: "Assistant", sans-serif;
   font-family: Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #d8d5d5;
   cursor: pointer;
 }
-button.primary{
+button.primary {
   background-color: #f0c040;
 }
-button.block{
+button.block {
   width: 100%;
 }
-button:hover{
+button:hover {
   border: 0.1rem solid #404040;
 }
 button:active {
@@ -93,86 +93,85 @@ button:active {
   transform: translateY(1px);
 }
 
-header a{
+header a {
   color: #fff;
   padding: 1rem;
 }
-.row.center{
+.row.center {
   justify-content: center;
 }
-.row{
+.row {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 0 2rem;
+  padding: 0 3rem;
 }
-.row.top{
+.row.top {
   align-items: flex-start;
   justify-content: center;
   padding: 5rem 0;
 }
- .col-1{
-   /* flex: 1 1 5rem;  */
-  padding: 5rem ;
-} 
- .col-2{
-   padding: 3rem;
+.col-1 {
+  /* flex: 1 1 5rem;  */
+  padding: 5rem;
+}
+.col-2 {
+  padding: 3rem;
   /* flex: 3 1 25rem; */
-} 
-img{
-  border-radius: .5rem;
+}
+img {
+  border-radius: 0.5rem;
   height: 350px;
   width: auto;
 }
-img.medium{
+img.medium {
   max-width: 29rem;
   width: 100%;
 }
-img.large{
+img.large {
   display: flex;
   justify-content: center;
   width: auto;
-  
 }
-.card{
+.card {
   border: 0.1rem solid #c9c9c9;
   background-color: #f8f8f8;
   border-radius: 0.5rem;
   margin: 1rem;
 }
-.card-body{
+.card-body {
   padding: 2rem;
 }
-.card-price{
+.card-price {
   width: 100%;
 }
 
-@media(max-width: 800px){
-  .card-price{
+@media (max-width: 800px) {
+  .card-price {
     width: auto;
   }
 }
-.card-body > *{
+.card-body > * {
   margin-bottom: 0.5rem;
 }
-.price{
+.price {
   font-size: 2rem;
 }
-.rating span{
+.rating span {
   color: #f0c040;
   margin-right: 0.1rem;
 }
-.rating span:last-child{
+.rating span:last-child {
   color: #0e2338;
 }
-.success{
+.success {
   color: #20a020;
 }
-.danger{
+.danger {
   color: #a02020;
 }
-.alert{
+.alert {
   padding: 1rem;
   border: 0.1rem solid transparent;
   border-radius: 0.5rem;
@@ -180,34 +179,37 @@ img.large{
   width: 50%;
   text-align: center;
 }
-.alert-info{
+.alert-info {
   color: #2020a0;
   background-color: #e0e0ff;
 }
-.alert-danger{
+.alert-danger {
   color: #a02020;
   background-color: #ffe0e0e0;
 }
-.product-info{
+.product-info {
   font-size: 1.8rem;
   color: #0c0b74;
   font-weight: 550;
-
 }
-.product-info span{
+.product-info span {
   font-weight: 100;
   color: #203040;
 }
-.loading{
+.loading {
   font-size: 2rem;
   display: flex !important;
   justify-content: center !important;
   align-items: center !important;
   padding: 2rem;
 }
-.loading i{
+.loading i {
   font-size: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.backTo{
+  padding: 2rem ;
+  font-size: 1.4rem;
 }
