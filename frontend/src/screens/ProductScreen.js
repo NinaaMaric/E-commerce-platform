@@ -7,7 +7,7 @@ export const ProductScreen = (props) => {
   const product = data.products.find((x) => x.id === props.match.params.id);
 
   if (!product) {
-    return <div> Product no found! </div>;
+    return <div> Product not found! </div>;
   }
 
   return (
@@ -30,10 +30,14 @@ export const ProductScreen = (props) => {
               <Rating rating={product.rating} numReview={product.numReview} />
             </li>
             <li>
-              <p className="product-info">Price: <span> ${product.price} </span> </p>
+              <p className="product-info">
+                Price: <span> ${product.price} </span>
+              </p>
             </li>
             <li>
-              <p className="product-info">Description: <span>{product.description}</span></p> 
+              <p className="product-info">
+                Description: <span>{product.description}</span>
+              </p>
             </li>
           </ul>
         </div>
@@ -51,9 +55,9 @@ export const ProductScreen = (props) => {
                   <p className="product-info">Status: </p>
                   <div className="price">
                     {product.countInStock > 0 ? (
-                       <span className="success"> In stock</span>
+                      <span className="success"> In stock</span>
                     ) : (
-                       <span className="danger"> Unavaible</span>
+                      <span className="danger"> Unavaible</span>
                     )}
                   </div>
                 </div>
